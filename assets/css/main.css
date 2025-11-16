@@ -326,12 +326,13 @@ input, select, textarea {
 /* The navigation menu */
 .navbar {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #33333300;
+	justify-content: center;
   }
   
   /* Navigation links */
   .navbar a {
-	float: center;
+	float:center;
 	font-size: 16px;
 	color: #ffcc00;
 	text-align: center;
@@ -341,8 +342,10 @@ input, select, textarea {
   
   /* The subnavigation menu */
   .subnav {
-	float: left;
+	float: center;
 	overflow: hidden;
+	justify-content:left;
+	padding: 1px 1px;
   }
   
   /* Subnav button */
@@ -354,12 +357,12 @@ input, select, textarea {
 	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit;
-	margin: 0;
+	margin: 0.5cm;
   }
   
   /* Add a red background color to navigation links on hover */
   .navbar a:hover, .subnav:hover .subnavbtn {
-	background-color: red;
+	background-color: rgba(255, 0, 0, 0);
   }
   
   /* Style the subnav content - positioned absolute */
@@ -367,15 +370,16 @@ input, select, textarea {
 	display: none;
 	position: absolute;
 	left: 0;
-	background-color: red;
+	background-color: rgba(255, 0, 0, 0);
 	width: 100%;
 	z-index: 1;
   }
   
   /* Style the subnav links */
-  .subnav-content a {
-	float: left;
-	color: white;
+  .subnav-content a {rgba(255, 0, 0, 0)
+	float: center;
+	color: #ffcc00;
+	;
 	text-decoration: none;
   }
   
@@ -2878,8 +2882,8 @@ ul.major-icons li .image {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
-		color: #fff !important;
+		box-shadow: inset 0 0 0 1px #ffca39;
+		color: #ffca39 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.9em;
@@ -2956,9 +2960,9 @@ ul.major-icons li .image {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #555;
+			background-color: #ffca39;
 			box-shadow: none !important;
-			color: #fff !important;
+			color: #ffca39 !important;
 		}
 
 			input[type="submit"].primary:hover,
@@ -2966,7 +2970,7 @@ ul.major-icons li .image {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #626262;
+				background-color: #ffca39;
 			}
 
 			input[type="submit"].primary:active,
@@ -2974,7 +2978,7 @@ ul.major-icons li .image {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #484848;
+				background-color: #ffca39;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
