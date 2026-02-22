@@ -75,6 +75,8 @@ input, select, textarea {
 
 /* Basic */
 
+
+
 	html {
 		box-sizing: border-box;
 	}
@@ -121,8 +123,8 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #555;
-		font-weight: 400;
+		color: #ffffff; /*#555; */
+		font-weight: 500;
 	}
 
 	em, i {
@@ -286,6 +288,18 @@ input, select, textarea {
 				max-width: calc(100% - 3em);
 			}
 
+		/*
+		Source - https://stackoverflow.com/a/1633170
+		Posted by Beau Smith, modified by community. See post 'Timeline' for change history
+		Retrieved 2026-02-22, License - CC BY-SA 3.0
+		*/
+		.container::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+  
+
 		}
 
 
@@ -393,16 +407,6 @@ input, select, textarea {
   .subnav:hover .subnav-content {
 	display: block;
   }
-
-
-
-
-
-
-
-
-
-
 
 
 
