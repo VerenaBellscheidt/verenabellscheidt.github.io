@@ -246,7 +246,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4em);
-		width: 100% /* 60em;*/
+		width: 60em;
 	}
 
 		.container.xsmall {
