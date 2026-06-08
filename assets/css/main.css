@@ -19,6 +19,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
+	margin-bottom: 0; /*NEW*/
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -3527,4 +3528,43 @@ input, select, textarea {
 
 #nav ul li {
     padding: 0 0.5em;
+	font-weight: bold;
 }
+
+/* For door to whimsy */
+.hover-image-container {
+	position: relative;  
+	display: block;
+	width: fit-content;
+	margin-left: auto;   
+	margin-top: -200px; /* gap below the text above */
+	margin-right: 16px; 
+	margin-bottom: 0px;
+  }
+  
+  .hover-image-container img {
+	display: block;
+	width: 80px; /* adjust as needed */
+	height: auto;
+  }
+  
+  .hover-text {
+	position: relative;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(79, 45, 7, 0.437);
+	color: #fff;
+	font-size: 0.75rem;
+	text-align: center;
+	padding: 4px;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	pointer-events: none;
+  }
+  
+  .hover-image-container:hover .hover-text {
+	opacity: 1;
+  }
+
